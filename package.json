@@ -1,0 +1,25 @@
+{
+	"name": "pw_decorators",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "rm -rf build && tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+		"test:e2e": "npm run build && npx playwright test --config=./build/playwright.config.js",
+		"test:api": "ts-node specs/api/api.spec.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@playwright/test": "^1.31.2",
+		"chalk": "^4.1.2",
+		"log4js": "^6.8.0",
+		"ts-node": "^10.9.1",
+		"tsc-alias": "^1.8.2",
+		"typescript": "^4.9.5"
+	},
+	"devDependencies": {
+		"@types/node": "^18.14.5"
+	}
+}

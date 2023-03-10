@@ -1,0 +1,14 @@
+# node modules
+node_modules
+
+# Environments file
+.env
+
+# Output 
+output
+build
+trace.log
+
+# Tests output
+test-results
+playwright-report
